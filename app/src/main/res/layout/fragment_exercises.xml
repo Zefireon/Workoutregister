@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExercisesFragment">
+
+    <ImageButton
+        android:id="@+id/bt_infoexe"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/infobutton"
+        android:contentDescription="exeinfo"
+        android:scaleType="fitCenter"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <LinearLayout
+        android:id="@+id/layouttitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/text_dashboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/title_dashboard"
+            android:textAlignment="center"
+            android:textSize="48sp" />
+
+    </LinearLayout>
+
+
+    <HorizontalScrollView
+        android:id="@+id/layoutbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layouttitle">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/ibchallange"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/muscle_chall"
+                android:scaleType="fitXY"
+                android:src="@drawable/iconchall" />
+
+            <ImageButton
+                android:id="@+id/ibchest"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/muscle_chest"
+                android:scaleType="fitXY"
+                android:src="@drawable/iconchest" />
+
+            <ImageButton
+                android:id="@+id/ibshoulder"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/muscle_shoulder"
+                android:scaleType="fitXY"
+                android:src="@drawable/iconshoulder" />
+
+            <ImageButton
+                android:id="@+id/ibtriceps"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/muscle_triceps"
+                android:scaleType="fitXY"
+                android:src="@drawable/icontriceps" />
+
+            <ImageButton
+                android:id="@+id/ibbiceps"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/muscle_biceps"
+                android:scaleType="fitXY"
+                android:src="@drawable/iconbiceps" />
+
+            <ImageButton
+                android:id="@+id/ibback"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/muscle_back"
+                android:scaleType="fitXY"
+                android:src="@drawable/iconback" />
+
+            <ImageButton
+                android:id="@+id/ibabs"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/muscle_core"
+                android:scaleType="fitXY"
+                android:src="@drawable/iconabs" />
+
+            <ImageButton
+                android:id="@+id/iblegs"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/muscle_legs"
+                android:scaleType="fitXY"
+                android:src="@drawable/iconlegs" />
+
+            <ImageButton
+                android:id="@+id/ibkardio"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/muscle_cardio"
+                android:scaleType="fitXY"
+                android:src="@drawable/iconkardio" />
+
+            <ImageButton
+                android:id="@+id/iball"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/muscle_all"
+                android:scaleType="fitXY"
+                android:src="@drawable/iconall2" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@id/layoutbutton"
+        app:layout_constraintTop_toBottomOf="@id/layoutbutton">
+
+        <ListView
+            android:id="@+id/list_exercises"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="220dp"
+            />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

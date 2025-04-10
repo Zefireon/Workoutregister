@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/frameactual"
+    tools:context=".ActualFragment">
+
+    <TextView
+        android:id="@+id/tb_actualtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/title_week"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/bt_infoactual"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/infobutton"
+        android:contentDescription="actualinfo"
+        android:scaleType="fitCenter" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tb_actualtitle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/iw_push"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:contentDescription="@string/title_push"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:src="@drawable/iconall" />
+
+                <TextView
+                    android:id="@+id/tb_pushtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/title_push"
+                    android:textAlignment="center"
+                    android:textSize="28sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/iw_push" />
+
+                <TextView
+                    android:id="@+id/tb_mchest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="32dp"
+                    android:text="@string/muscle_chest"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    app:layout_constraintLeft_toRightOf="@id/iw_mchest"
+                    app:layout_constraintTop_toBottomOf="@+id/iw_push" />
+
+                <ImageView
+                    android:id="@+id/iw_mchest"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:contentDescription="@string/muscle_chest"
+                    android:visibility="visible"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/iw_push"
+                    android:src="@drawable/iconchest" />
+
+                <TextView
+                    android:id="@+id/tb_mtricep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="32dp"
+                    android:text="@string/muscle_triceps"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    app:layout_constraintLeft_toRightOf="@id/iw_mticep"
+                    app:layout_constraintTop_toBottomOf="@+id/tb_mchest"
+                    app:layout_constraintTop_toTopOf="@+id/iw_mticep" />
+
+                <ImageView
+                    android:id="@+id/iw_mticep"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/iw_mchest"
+                    android:src="@drawable/icontriceps" />
+
+                <TextView
+                    android:id="@+id/tb_mshoulder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="32dp"
+                    android:text="@string/muscle_shoulder"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    app:layout_constraintLeft_toRightOf="@id/iw_mshoulder"
+                    app:layout_constraintTop_toBottomOf="@+id/tb_mtricep"
+                    app:layout_constraintTop_toTopOf="@+id/iw_mshoulder" />
+
+                <ImageView
+                    android:id="@+id/iw_mshoulder"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/iw_mticep"
+                    android:src="@drawable/iconshoulder" />
+
+                <TextView
+                    android:id="@+id/tb_pushoveral"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="0/3000"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="@id/iw_push"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/iw_pull"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:src="@drawable/iconall" />
+
+                <TextView
+                    android:id="@+id/tb_pulltitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/title_pull"
+                    android:textAlignment="center"
+                    android:textSize="28sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tb_mbicep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="32dp"
+                    android:text="@string/muscle_biceps"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    app:layout_constraintLeft_toRightOf="@id/iw_mbiceps"
+                    app:layout_constraintTop_toBottomOf="@+id/iw_pull"
+                    app:layout_constraintTop_toTopOf="@+id/iw_mbiceps"/>
+
+                <ImageView
+                    android:id="@+id/iw_mbiceps"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/iw_pull"
+                    android:src="@drawable/iconbiceps" />
+
+                <TextView
+                    android:id="@+id/tb_mback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="32dp"
+                    android:text="@string/muscle_back"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    app:layout_constraintLeft_toRightOf="@id/iw_mback"
+                    app:layout_constraintTop_toBottomOf="@+id/tb_mbicep"
+                    app:layout_constraintTop_toTopOf="@+id/iw_mback" />
+
+                <ImageView
+                    android:id="@+id/iw_mback"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/iw_mbiceps"
+                    android:src="@drawable/iconback" />
+
+                <TextView
+                    android:id="@+id/tb_pulloveral"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="0/3000"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="@id/iw_pull"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/iw_burn"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:src="@drawable/iconall" />
+
+                <TextView
+                    android:id="@+id/tb_burntitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/title_burn"
+                    android:textAlignment="center"
+                    android:textSize="28sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/iw_mleg"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/iw_burn"
+                    android:src="@drawable/iconlegs" />
+
+                <TextView
+                    android:id="@+id/tb_mleg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="32dp"
+                    android:text="@string/muscle_legs"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    app:layout_constraintLeft_toRightOf="@id/iw_mleg"
+                    app:layout_constraintTop_toBottomOf="@+id/iw_burn"
+                    app:layout_constraintTop_toTopOf="@+id/iw_mleg" />
+
+                <ImageView
+                    android:id="@+id/iw_mcore"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/iw_mleg"
+                    android:src="@drawable/iconabs" />
+
+                <TextView
+                    android:id="@+id/tb_mcore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="32dp"
+                    android:text="@string/muscle_core"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    app:layout_constraintLeft_toRightOf="@id/iw_mcore"
+                    app:layout_constraintTop_toBottomOf="@+id/tb_mleg"
+                    app:layout_constraintTop_toTopOf="@+id/iw_mcore" />
+
+                <ImageView
+                    android:id="@+id/iw_mcardio"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/iw_mcore"
+                    android:src="@drawable/iconkardio" />
+
+                <TextView
+                    android:id="@+id/tb_mcardio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="32dp"
+                    android:text="@string/muscle_cardio"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    app:layout_constraintLeft_toRightOf="@id/iw_mcardio"
+                    app:layout_constraintTop_toBottomOf="@+id/tb_mcore"
+                    app:layout_constraintTop_toTopOf="@+id/iw_mcardio" />
+
+                <TextView
+                    android:id="@+id/tb_burnoveral"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="0/2000"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="@id/iw_burn"
+                    app:layout_constraintRight_toRightOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/iw_chall"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/iconchall"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tb_challtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/title_challange"
+                    android:textAlignment="center"
+                    android:textSize="28sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/iw_challpush"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/u0001"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/iw_chall" />
+
+                <TextView
+                    android:id="@+id/tb_challpush"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="32dp"
+                    android:text="@string/chall_pushup"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp"
+                    app:layout_constraintLeft_toRightOf="@id/iw_challpush"
+                    app:layout_constraintTop_toBottomOf="@+id/iw_chall"
+                    app:layout_constraintTop_toTopOf="@+id/iw_challpush" />
+
+                <ImageView
+                    android:id="@+id/iw_challdip"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/u0003"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/iw_challpush" />
+
+                <TextView
+                    android:id="@+id/tb_challdip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="32dp"
+                    android:text="@string/chall_dip"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp"
+                    app:layout_constraintLeft_toRightOf="@id/iw_challdip"
+                    app:layout_constraintTop_toBottomOf="@+id/tb_challpush"
+                    app:layout_constraintTop_toTopOf="@+id/iw_challdip" />
+
+                <ImageView
+                    android:id="@+id/iw_challpike"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/u0002"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/iw_challdip" />
+
+                <TextView
+                    android:id="@+id/tb_challpike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="32dp"
+                    android:text="@string/chall_pikepushup"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp"
+                    app:layout_constraintLeft_toRightOf="@id/iw_challpike"
+                    app:layout_constraintTop_toBottomOf="@+id/tb_challdip"
+                    app:layout_constraintTop_toTopOf="@+id/iw_challpike" />
+
+                <ImageView
+                    android:id="@+id/iw_challchin"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/u0005"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/iw_challpike" />
+
+                <TextView
+                    android:id="@+id/tb_challchin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="32dp"
+                    android:text="@string/chall_chinup"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp"
+                    app:layout_constraintLeft_toRightOf="@id/iw_challchin"
+                    app:layout_constraintTop_toBottomOf="@+id/tb_challpike"
+                    app:layout_constraintTop_toTopOf="@+id/iw_challchin" />
+
+                <ImageView
+                    android:id="@+id/iw_challpullup"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/u0004"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/iw_challchin" />
+
+                <TextView
+                    android:id="@+id/tb_challpullup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="32dp"
+                    android:text="@string/chall_pullup"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp"
+                    app:layout_constraintLeft_toRightOf="@id/iw_challpullup"
+                    app:layout_constraintTop_toBottomOf="@+id/tb_challchin"
+                    app:layout_constraintTop_toTopOf="@+id/iw_challpullup" />
+
+                <ImageView
+                    android:id="@+id/iw_challwidepull"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/u0004"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/iw_challpullup" />
+
+                <TextView
+                    android:id="@+id/tb_challwidepull"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="32dp"
+                    android:text="@string/chall_widepullup"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp"
+                    app:layout_constraintLeft_toRightOf="@id/iw_challwidepull"
+                    app:layout_constraintTop_toBottomOf="@+id/tb_challpullup"
+                    app:layout_constraintTop_toTopOf="@+id/iw_challwidepull" />
+
+                <ImageView
+                    android:id="@+id/iw_challsquat"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/u0007"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/iw_challwidepull" />
+
+                <TextView
+                    android:id="@+id/tb_challsquat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="32dp"
+                    android:text="@string/chall_squat"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp"
+                    app:layout_constraintLeft_toRightOf="@id/iw_challsquat"
+                    app:layout_constraintTop_toBottomOf="@+id/tb_challwidepull"
+                    app:layout_constraintTop_toTopOf="@+id/iw_challsquat" />
+
+                <ImageView
+                    android:id="@+id/iw_challtoe"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/u0006"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/iw_challsquat" />
+
+                <TextView
+                    android:id="@+id/tb_challtoe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="32dp"
+                    android:text="@string/chall_toebar"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp"
+                    app:layout_constraintLeft_toRightOf="@id/iw_challtoe"
+                    app:layout_constraintTop_toBottomOf="@+id/tb_challsquat"
+                    app:layout_constraintTop_toTopOf="@+id/iw_challtoe" />
+
+                <ImageView
+                    android:id="@+id/iw_challburp"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/u0008"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/iw_challtoe" />
+
+                <TextView
+                    android:id="@+id/tb_challburp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="32dp"
+                    android:text="@string/chall_burpee"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp"
+                    app:layout_constraintLeft_toRightOf="@id/iw_challburp"
+                    app:layout_constraintTop_toBottomOf="@+id/tb_challtoe"
+                    app:layout_constraintTop_toTopOf="@+id/iw_challburp" />
+
+                <ImageView
+                    android:id="@+id/iw_challcardiobike"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/u0010"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/iw_challburp" />
+
+                <TextView
+                    android:id="@+id/tb_challcardiobike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="32dp"
+                    android:text="@string/chall_bike"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp"
+                    app:layout_constraintLeft_toRightOf="@id/iw_challcardiobike"
+                    app:layout_constraintTop_toBottomOf="@+id/tb_challburp"
+                    app:layout_constraintTop_toTopOf="@+id/iw_challcardiobike" />
+
+                <ImageView
+                    android:id="@+id/iw_challkardiorun"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/u0011"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/iw_challcardiobike" />
+
+                <TextView
+                    android:id="@+id/tb_challkardiorun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="32dp"
+                    android:text="@string/chall_run"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp"
+                    app:layout_constraintLeft_toRightOf="@id/iw_challkardiorun"
+                    app:layout_constraintTop_toBottomOf="@+id/tb_challcardiobike"
+                    app:layout_constraintTop_toTopOf="@+id/iw_challkardiorun" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</FrameLayout>

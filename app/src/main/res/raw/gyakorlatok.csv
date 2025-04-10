@@ -1,0 +1,145 @@
+id;name;muscle;description;variant;basepoint;diff
+c0001;Push-up;chest;x;extra weight, reverse/different hand position, bench;2;easy-hard
+c0002;Diamond push-up;chest;x;extra weight;3;hard
+c0003;Barbell bench press;chest;x;incline/decline;2;easy
+c0004;Dumbell bench press;chest;x;incline/decline, alternate, reverse grip;2;easy
+c0005;Close-grip dumbell press;chest;x;x;2;easy
+c0006;Hammer bench press;chest;x;incline/decline, alternate;2;easy
+c0007;Dumbell bench fly;chest;x;incline/decline;2;easy
+c0008;Dumbell upward fly;chest;x;alternate;2;easy
+c0009;Chest dips;chest;x;extra weight;3;medium
+c0010;Machine chest press;chest;x;incline/decline;2;easy
+c0011;Machine inner chest press;chest;x;x;2;easy
+c0012;Machine pec-deck fly;chest;x;x;2;easy
+c0013;Machine lever pec-deck fly;chest;x;x;2;easy
+c0014;Single arm cable crossover;chest;x;standing;2;easy
+c0015;Single arm cable fly;chest;x;incline/decline;2;easy
+c0016;Straddle planche;chest;x;practice;1;master
+s0001;Bench pike push-up;shoulder;x;without bench, extra weight;3;hard
+s0002;Barbell military press;shoulder;x;sitting/standing, smith;2;easy
+s0003;Barbell behind neck press;shoulder;x;sitting/standing, smith;2;easy
+s0004;Barbell front raise;shoulder;x;x;2;easy
+s0005;Barbell upright row;shoulder;x;x;2;easy
+s0006;Dumbell overhead press;shoulder;x;sitting/standing, alternate;2;easy
+s0007;Scott press;shoulder;x;sitting/standing;2;easy
+s0008;Arnold press;shoulder;x;sitting/standing;3;medium
+s0009;Cuban press;shoulder;x;x;3;medium
+s0010;Dumbell W press;shoulder;x;x;2;easy
+s0011;Dumbell palms in press;shoulder;x;sitting/standing, alternate;2;easy
+s0012;Dumbell lateral rise;shoulder;x;sitting/standing, alternate;2;easy
+s0013;Dumbell  rear lateral rise;shoulder;x;sitting /bench lying/standing;2;easy
+s0014;Dumbell scaption;shoulder;x;sitting/standing, alternate;2;easy
+s0015;Dumbell rise;shoulder;x;x;2;easy
+s0016;Dumbell front rise;shoulder;x;sitting/standing, alternate;2;easy
+s0017;Two-arm dumbell front rise;shoulder;x;x;2;easy
+s0018;Machine shoulder press;shoulder;x;x;2;easy
+s0019;Cable upright row;shoulder;x;x;2;easy
+s0020;Cable lateral rise;shoulder;x;x;2;easy
+s0021;Cable front rise;shoulder;x;two arm;2;easy
+s0022;Human flag;shoulder;x;practice;1;master
+s0023;Handstand push-up;shoulder;x;practice;1;master
+t0001;Triceps dips;triceps;x;extra weight;3;medium
+t0002;Straight bar dips;triceps;x;x;3;medium
+t0003;Korean dips;triceps;x;x;3;medium
+t0004;Bench dips;triceps;x;double bench;2;easy
+t0005;Close grip bench press;triceps;x;x;3;medium
+t0006;Barbell triceps extension;triceps;x;standing/lying;2;easy
+t0007;Dumbell skullcrusher;triceps;x;x;2;easy
+t0008;Dumbell kickback;triceps;x;x;2;easy
+t0009;Dumbell tate press;triceps;x;sitting/standing;3;medium
+t0010;Dumbell triceps extension;triceps;x;sitting/standing;2;easy
+t0011;Cable push-down;triceps;x;rope/bar;2;easy
+t0012;Cable reverse push-down;triceps;x;two/single arm;2;easy
+t0013;Cable rear dive;triceps;x;x;2;easy
+t0014;Cable side reverse push-down;triceps;x;x;2;easy
+t0015;Kneling triceps extension;triceps;x;x;2;easy
+t0016;Lying  triceps extension;triceps;x;x;2;easy
+t0017;Machine dips;triceps;x;x;2;easy
+t0018;Plance push-up;triceps;x;practice;1;master
+b0001;Chin-up;biceps;x;extra weight;3;medium
+b0002;Barbell curl;biceps;x;ez bar, reverse grip, bench lying;2;easy
+b0003;Drag curl;biceps;x;ez bar;2;easy
+b0004;Wrist curl;biceps;x;reverse grip;2;easy
+b0005;Barbell concetration curl;biceps;x;sitting/standing;2;easy
+b0006;Barbell preacher curl;biceps;x;sitting/standing, ez bar;2;easy
+b0007;Barbell behind wrist curl;biceps;x;x;2;easy
+b0008;Dumbell concetration curl;biceps;x;alternate, reverse grip;2;easy
+b0009;Dumbell curl;biceps;x;sitting/standing, alternate, reverse grip, incline;2;easy
+b0010;Hammer curl;biceps;x;sitting/standing, alternate;2;easy
+b0011;Zottman curl;biceps;x;x;3;medium
+b0012;Waiter curl;biceps;x;sitting/standing;2;easy
+b0013;Dumbell high curl;biceps;x;x;2;easy
+b0014;Dumbell wrist curl;biceps;x;x;2;easy
+b0015;Flexor  dumbell curl;biceps;x;x;2;easy
+b0016;Dumbell spider hammer curl;biceps;x;x;2;easy
+b0017;Dumbell preacher curl;biceps;x;sitting/standing, single/double arm;2;easy
+b0018;Dumbell preacher hammer curl;biceps;x;sitting/standing, single/double arm;2;easy
+b0019;Machine reverse pull down;biceps;x;x;2;easy
+b0020;Cable curl;biceps;x;rope/bar, sitting/standing;2;easy
+b0021;One-arm cable curl;biceps;x;x;2;easy
+b0022;Cable high curl;biceps;x;x;2;easy
+b0023;One-arm chin up;biceps;x;practice;1;master
+w0001;Pull-up;back;x;behind neck, wider grip, extra weight, L form;3;medium
+w0002;Commander pull-up;back;x;extra weight;3;medium
+w0003;Inverted row;back;x;extra weight, wider grip;2;easy
+w0004;Barbell bent over row;back;x;reverse grip, incline bench;2;easy
+w0005;Barbell shrug;back;x;x;2;easy
+w0006;Barbell deadlift;back;x;reverse/mix grip, straight leg;3;medium
+w0007;Dumbell bent over row;back;x;reverse grip, incline bench;2;easy
+w0008;Dumbell shrug;back;x;x;2;easy
+w0009;Dumbell deadlift;back;x;single leg;3;medium
+w0010;Dumbell row;back;x;standing/bench;2;easy
+w0011;Dumbell pull through;back;x;x;2;easy
+w0012;Bench back extension;back;x;flat/incline bench, extra weight;2;easy
+w0013;Machine pull down;back;x;behind neck, wider grip;2;easy
+w0014;Cable bent over row;back;x;single arm;2;easy
+w0015;Cable straigt arm pull down;back;x;straight standing position;2;easy
+w0016;Shotgun row;back;x;x;2;easy
+w0017;Back lever;back;x;practice;1;master
+w0018;Front lever pull up;back;x;practice;1;master
+w0019;Muscle up;back;x;practice;1;master
+a0001;Toes to bar;abs;x;extra weight;4;hard
+a0002;Leg raise;abs;x;extra weight;3;medium
+a0003;Knee raise;abs;x;extra weight;3;medium
+a0004;Captain chair leg raise;abs;x;extra weight, knee raises;2;easy
+a0005;Windshield wiper;abs;x;x;4;hard
+a0006;Bodyweight abs exersises;abs;Timed programs for fixed points;program following;1;hard
+a0007;L-sit;abs;x;practice;1;master
+l0001;Squat;legs;x;zercher version;2;easy
+l0002;Curtsey squat;legs;x;x;2;easy
+l0003;Lunge;legs;x;x;2;easy
+l0004;Bulgarian squat;legs;x;x;2;easy
+l0005;Barbell squat;legs;x;dumbell;2;easy
+l0006;Barbell split squat;legs;x;dumbell;2;easy
+l0007;Barbell front squat;legs;x;dumbell;2;easy
+l0008;Barbell sumo squat;legs;x;dumbell;2;easy
+l0009;Barbell lunge;legs;x;dumbell;2;easy
+l0010;Barbell lateral lunge;legs;x;dumbell;3;medium
+l0011;Overhead squat;legs;x;x;2;easy
+l0012;Barbell snatch;legs;x;x;4;hard
+l0013;Barbell bulgarian split squat;legs;x;x;2;easy
+l0014;Barbell thruster;legs;x;x;3;medium
+l0015;Dumbell iron cross;legs;x;x;3;medium
+l0016;Dumbell goblet squat;legs;x;x;2;easy
+l0017;Machine leg extension;legs;x;x;2;easy
+l0018;Machine leg press;legs;x;x;2;easy
+l0019;Pistol squat;legs;x;practice;1;master
+k0001;Burpee;kardio;x;x;3;medium
+k0002;Treadmill;kardio;x;x;2;easy-hard
+k0003;Stationary bike;kardio;x;x;2;easy-hard
+k0004;Running;kardio;x;x;2;easy-hard
+k0005;Stepmill;kardio;x;x;2;easy-hard
+k0006;Rowing machine;kardio;x;x;2;easy-hard
+k0007;Shadow boxing;kardio;x;dancing, gymnastic, burn/HIIT programs;2;easy-hard
+k0008;Swimming;kardio;x;x;3;medium-hard
+u0001;Push-up challange;chest;x;challange;2;challange
+u0002;Bench pike push-up challange;shoulder;x;challange;3;challange
+u0003;Triceps dips challange;triceps;x;challange;3;challange
+u0004;Pull-up challange;back;x;challange;3;challange
+u0004;Wide pull-up challange;back;x;challange;3;challange
+u0005;Chin-up challange;biceps;x;challange;3;challange
+u0006;Toes to bar challange;abs;x;challange;4;challange
+u0007;Squat challange;legs;x;challange;2;challange
+u0008;Burpee challange;kardio;x;challange;3;challange
+u0009;Stationary bike challange;kardio;x;challange;2;challange
+u0010;Running challange;kardio;x;challange;2;challange
