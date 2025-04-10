@@ -1,4 +1,4 @@
-Workout register and development tracking
+Workout register and development tracking. 
 Functions:
   - track current week progress
   - search and register the performed exercises
